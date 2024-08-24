@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biker Zone</title>
+    <!-- DaisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'color-primary': 'rgb(231, 111, 81)',
+                    }
+                    
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar container mx-auto">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li class="text-base font-medium"><a>Home</a></li>
+                            <li class="text-base font-medium"><a>Shop</a></li>
+                            <li class="text-base font-medium"><a>News</a></li>
+                            <li class="text-base font-medium"><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class=" text-xl lg:text-4xl font-bold bg-color-primary text-white btn">GO RIDE</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="text-base font-medium"><a>Home</a></li>
+                        <li class="text-base font-medium"><a>Shop</a></li>
+                        <li class="text-base font-medium"><a>News</a></li>
+                        <li class="text-base font-medium"><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-color-primary text-white text-lg lg:text-xl font-bold hover:bg-blue-300">Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>
